@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --main-color:;
+}
+
+body{
+    background-color: #e2e2e2;
+}
+
+.login-form .container .row .form-div{
+    padding: 70px;
+    background: #fff;
+    margin-top: 100px ;
+    width: 100%;
+}
+
+.login-form .form-control{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.video-container{
+    background: #fff;
+    border: 1px solid #24a5e0;
+    border-radius: 5px;
+    min-height: 500px;
+    height: 100vh;
+    margin: 5px;
+    
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+
+.icon-wrapper .fa{
+    color: #24a5e0;
+    font-size: 45px;
+    background: #fff;
+    padding: 10px;
+
+}

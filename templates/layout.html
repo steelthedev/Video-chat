@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>
+            iChat
+        </title>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="{% static 'lib/bootstrap/css/bootstrap.min.css' %} ">
+        <link rel="stylesheet" href="{% static 'lib/font-awesome/css/font-awesome.min.css' %} ">
+        <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+        <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %} ">
+        <link rel="stylesheet" href="{% static 'css//aos/aos.css' %} ">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    </head>
+    <body>
+
+
+
+
+
+
+
+        {% block content %}
+
+        {% if messages %}
+         <div class="mt-5 pt-4">
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+              {{ message }}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            {% endfor %}
+                </div>
+        {% endif %}
+    
+    {% endblock %}
+    
+
+            </section>
+            <script src="{% static 'js/jquery.min.js' %} "></script>
+            <script src="{% static 'css//aos/aos.js ' %} "></script>
+            <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+            <script src="{% static 'js/bootstrap.min.js' %}"></script>
+            <script type="text/javascript" src="{% static 'agora/AgoraRTC_N-4.11.0.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/stream.js' %}"></script>
+            <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        </body>
+    </html>
